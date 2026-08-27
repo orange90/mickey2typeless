@@ -16,5 +16,5 @@ All notable changes to MicKey will be documented in this file. The project follo
 - Localization validation and GitHub Actions CI.
 - Universal 2 release packaging, notarization, and checksum generation.
 
-[Unreleased]: https://github.com/orange90/insta360mic2typelss/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/orange90/insta360mic2typelss/releases/tag/v1.0.0
+[Unreleased]: https://github.com/orange90/mickey2typeless/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/orange90/mickey2typeless/releases/tag/v1.0.0

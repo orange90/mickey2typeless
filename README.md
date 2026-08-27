@@ -1,6 +1,6 @@
 # MicKey
 
-[![CI](https://github.com/orange90/insta360mic2typelss/actions/workflows/ci.yml/badge.svg)](https://github.com/orange90/insta360mic2typelss/actions/workflows/ci.yml)
+[![CI](https://github.com/orange90/mickey2typeless/actions/workflows/ci.yml/badge.svg)](https://github.com/orange90/mickey2typeless/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 简体中文 | [English](README_EN.md)
@@ -15,9 +15,55 @@ MicKey 是一个原生 macOS 26 菜单栏应用，把麦克风 USB 接收器的 
 - 支持即时响应，以及保留单击、双击与长按硬件手势的响应模式。
 - 原生 Universal 2 应用；不联网、不读取录音、不申请麦克风权限。
 
+## 典型用例
+
+将麦克风上的实体按键映射为 Mac 的 Fn (Globe) 键，即可直接触发 Typeless 输入，无需再按电脑键盘。
+
 ## 安装
 
-从 [GitHub Releases](https://github.com/orange90/insta360mic2typelss/releases) 下载最新的已签名、公证 DMG，将 MicKey 拖入“应用程序”文件夹后启动。首次使用需按引导授予“输入监控”和“辅助功能”权限。
+从 [GitHub Releases](https://github.com/orange90/mickey2typeless/releases) 下载最新的已签名、公证 DMG，将 MicKey 拖入“应用程序”文件夹后启动。首次使用需按引导授予“输入监控”和“辅助功能”权限。
+
+## 使用方法
+
+### 1. 连接接收器
+
+先把麦克风的 USB 接收器插入 Mac，再启动 MicKey。应用会出现在菜单栏，首次启动时自动打开设置向导。看到“检测到可学习的 USB HID 设备”后点击“继续”。
+
+![MicKey 检测到麦克风 USB 接收器](docs/images/mickey-onboarding-connection.png)
+
+如果这里一直显示“未检测”，通常表示接收器没有提供 MicKey 能读取的 Consumer HID 按键事件；麦克风能够正常录音并不代表实体按键一定兼容。
+
+### 2. 识别麦克风按键
+
+进入“识别按键”后，点击“识别接收器按键”，再按一次准备映射的麦克风实体按键。MicKey 捕获到事件后会显示产品、厂商、VID/PID、Usage Page 和 Usage；核对信息确实属于当前接收器后再确认。
+
+![MicKey 等待用户按下接收器按键](docs/images/mickey-identify-button.png)
+
+MicKey 只会保存你主动确认的设备指纹和按键，不会自动占用其他键盘、鼠标或音量键。更换接收器时，在“设置 → 接收器”中先点击“忘记设备”，然后重新识别。
+
+### 3. 授予必要权限
+
+按照向导分别打开 macOS 的“输入监控”和“辅助功能”设置，并允许 MicKey。授权后如果状态没有立即更新，请退出并重新启动 MicKey。
+
+![MicKey 权限设置向导](docs/images/mickey-onboarding-permissions.png)
+
+MicKey 不需要麦克风权限：它不读取声音或录音，只接收 USB HID 按键事件并输出映射后的键盘事件。
+
+### 4. 映射为 Fn (Globe)
+
+打开菜单栏中的 MicKey，进入“设置 → 映射”，把“映射按键”设为 `Fn (Globe)`。用于 Typeless 时建议先选择“即时响应”，这样麦克风按下和松开的时长会原样映射为 Fn 按下和松开。
+
+![将麦克风按键映射为 Fn Globe](docs/images/mickey-fn-mapping.png)
+
+如果还要保留麦克风原有的双击或三击手势，可选择“保留硬件手势”。该模式会在按住 180ms 后开始输出，单击则要等待 320ms 判定窗口，因此触发会有少量延迟。
+
+### 5. 用麦克风按键触发 Typeless
+
+1. 在 Typeless 中确认触发键设置为 Fn。
+2. 将光标放进任意可输入文字的位置。
+3. 按下刚才识别的麦克风按键，即可像按下 Mac 键盘上的 Fn 一样启动 Typeless 输入；需要按住说话时，持续按住麦克风按键，完成后松开。
+
+正常工作时，MicKey 菜单栏状态会显示“正在映射”。如果 Typeless 没有启动，请依次检查接收器是否仍连接、两项系统权限是否已授权、映射按键是否为 `Fn (Globe)`，以及 Typeless 自己的触发键是否设为 Fn。
 
 ## 麦克风兼容性
 
