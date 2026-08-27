@@ -29,7 +29,7 @@ Download the latest signed and notarized DMG from [GitHub Releases](https://gith
 
 Plug the microphone's USB receiver into your Mac before launching MicKey. The app appears in the menu bar and opens the setup guide on first launch. Click Continue when MicKey reports that it has detected a learnable USB HID device.
 
-![MicKey detects a microphone USB receiver](docs/images/mickey-onboarding-connection.png)
+![MicKey detects a microphone USB receiver](docs/images/mickey-onboarding-connection-en.png)
 
 If the receiver remains undetected, it probably does not expose a Consumer HID button event that MicKey can read. A microphone working for audio recording does not guarantee that its physical buttons are compatible.
 
@@ -37,7 +37,7 @@ If the receiver remains undetected, it probably does not expose a Consumer HID b
 
 On the Identify Button step, click Identify Receiver Button and press the physical microphone button you want to map once. MicKey then displays the product, manufacturer, VID/PID, Usage Page, and Usage. Confirm only after checking that the details belong to the connected receiver.
 
-![MicKey waits for the receiver button](docs/images/mickey-identify-button.png)
+![MicKey waits for the receiver button](docs/images/mickey-identify-button-en.png)
 
 MicKey stores only the device fingerprint and button you explicitly confirm. It does not automatically claim another keyboard, mouse, or volume key. To use a different receiver, choose Forget Device under Settings → Receiver and repeat identification.
 
@@ -45,7 +45,7 @@ MicKey stores only the device fingerprint and button you explicitly confirm. It 
 
 Use the setup guide to allow MicKey under both macOS Input Monitoring and Accessibility. If the status does not update after granting access, quit and relaunch MicKey.
 
-![MicKey permission setup](docs/images/mickey-onboarding-permissions.png)
+![MicKey permission setup](docs/images/mickey-onboarding-permissions-en.png)
 
 MicKey does not request microphone permission. It never reads audio or recordings; it only receives USB HID button events and emits the mapped keyboard event.
 
@@ -53,7 +53,7 @@ MicKey does not request microphone permission. It never reads audio or recording
 
 Open MicKey from the menu bar, then go to Settings → Mapping and set Map Button to `Fn (Globe)`. For Typeless, start with Immediate Response so the physical press and release durations are reproduced as Fn down and Fn up.
 
-![Map the microphone button to Fn Globe](docs/images/mickey-fn-mapping.png)
+![Map the microphone button to Fn Globe](docs/images/mickey-fn-mapping-en.png)
 
 Choose Preserve Hardware Gestures only if you also need the microphone's original double- or triple-click actions. This mode starts output after a 180 ms hold and waits through a 320 ms decision window for a single click, so it adds a small delay.
 
