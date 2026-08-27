@@ -1,0 +1,45 @@
+name: Bug report
+description: Report a reproducible MicKey problem
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve MicKey. Please do not include serial numbers or other sensitive device data.
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: macOS 26.x
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: MicKey version
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: device
+    attributes:
+      label: Receiver details
+      description: Include the manufacturer, product, VID/PID, Usage Page, and Usage shown by MicKey when relevant.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true

@@ -1,0 +1,10 @@
+.DS_Store
+DerivedData/
+build/
+release/
+*.xcarchive
+*.dmg
+xcuserdata/
+*.swp
+.idea/
+.vscode/

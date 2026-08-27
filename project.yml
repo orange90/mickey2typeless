@@ -1,0 +1,71 @@
+name: MicKey
+options:
+  bundleIdPrefix: com.mickey
+  developmentLanguage: zh-Hans
+  deploymentTarget:
+    macOS: "26.0"
+  xcodeVersion: "26.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "26.0"
+    ARCHS: "arm64 x86_64"
+    ONLY_ACTIVE_ARCH: NO
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_HARDENED_RUNTIME: YES
+    ENABLE_APP_SANDBOX: NO
+    DEAD_CODE_STRIPPING: YES
+    MARKETING_VERSION: 1.0.0
+    CURRENT_PROJECT_VERSION: 1
+targets:
+  MicKey:
+    type: application
+    platform: macOS
+    sources:
+      - path: MicKey
+        excludes:
+          - Resources/Info.plist
+    info:
+      path: MicKey/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: MicKey
+        CFBundleDevelopmentRegion: zh-Hans
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSUIElement: true
+        NSInputMonitoringUsageDescription: MicKey 需要输入监控权限，才能接收你确认的接收器按键。
+        NSHumanReadableCopyright: Copyright © 2026 MicKey
+    entitlements:
+      path: MicKey/Resources/MicKey.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mickey.app
+        PRODUCT_NAME: MicKey
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SWIFT_STRICT_CONCURRENCY: minimal
+        INFOPLIST_KEY_CFBundleDisplayName: MicKey
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
+    dependencies:
+      - sdk: IOKit.framework
+      - sdk: ApplicationServices.framework
+  MicKeyTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - MicKeyTests
+    dependencies:
+      - target: MicKey
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mickey.tests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_STRICT_CONCURRENCY: minimal
+schemes:
+  MicKey:
+    build:
+      targets:
+        MicKey: all
+        MicKeyTests: [test]
+    test:
+      targets:
+        - MicKeyTests

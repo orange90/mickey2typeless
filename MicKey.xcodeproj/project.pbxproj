@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09441AA24CCCF9B9728F5201 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC463742303C1A498722E2 /* SettingsView.swift */; };
+		1671836FA471667879C2B9C9 /* KeyOutputEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481DC3B9A169C1CC4DF02D79 /* KeyOutputEngineTests.swift */; };
+		3534D39DB9851E7B3F73C8B1 /* DeviceFingerprintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC46039EB50FD7C346C188 /* DeviceFingerprintTests.swift */; };
+		3E0D4A218862E63BB23EE116 /* MappingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159C7C697AC5AA39ACDC2A49 /* MappingModels.swift */; };
+		44B66EEA05A36AB53C1B2180 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D73E16C66CDFD3AE2CA9A659 /* InfoPlist.strings */; };
+		466EBACAFB2225A25C8CF57E /* HIDService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53266D9224747B021AD4F2F1 /* HIDService.swift */; };
+		479BBE6B048412E2CB56AF33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C7400C1E672CA722C92E847 /* Localizable.strings */; };
+		508CA7E0B263C73B37BA6D8C /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9233F11376170B3F085D0799 /* PermissionManager.swift */; };
+		51EFB3F09B28103A267BDBF5 /* KeyOutputEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADB331E1B9B307E02FE37E /* KeyOutputEngine.swift */; };
+		8614AFB4B4CF2873C3B015F0 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F114B0599A42832D84DF24 /* AppSettings.swift */; };
+		A1D84B8D4697812D24B498A9 /* MenuContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D05C83F8ABABC4818661F5 /* MenuContentView.swift */; };
+		AD05A9A2567DAF77014D1884 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6731D0BF020580CD2762CB88 /* IOKit.framework */; };
+		B4CADE8FD3F842A38A2D7576 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616C29610C7D319E9083566B /* AppController.swift */; };
+		C02C91F22603570F7467BB60 /* MicKeyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C282641CC04FB571E5C3F94D /* MicKeyApp.swift */; };
+		C10707004308DAC928066B1F /* AppSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE127020B263AA1BB3D4348 /* AppSettingsTests.swift */; };
+		CDE64CFB03EA7078E34B2E97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FED70006AADAE254196E2D4 /* Assets.xcassets */; };
+		CE65CC1277F07441F671F961 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF8473FCE180D96FE2508F9 /* OnboardingView.swift */; };
+		E1505904F07C97826067A42C /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0250583D7D77C032D07AFD43 /* ApplicationServices.framework */; };
+		EC16BB0DBC028C0D93689FE3 /* DeviceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDC16CA485CCE533F279775 /* DeviceModels.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2950E1DED6D71B9D5ACFACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DE39A82DEF85923238979BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A571D119FBB5700F8D672939;
+			remoteInfo = MicKey;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0250583D7D77C032D07AFD43 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		159C7C697AC5AA39ACDC2A49 /* MappingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingModels.swift; sourceTree = "<group>"; };
+		3648B695369531FAF6FF8E05 /* MicKey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MicKey.entitlements; sourceTree = "<group>"; };
+		38B84434228FF4210C1740EC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		481DC3B9A169C1CC4DF02D79 /* KeyOutputEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyOutputEngineTests.swift; sourceTree = "<group>"; };
+		53266D9224747B021AD4F2F1 /* HIDService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIDService.swift; sourceTree = "<group>"; };
+		5BE127020B263AA1BB3D4348 /* AppSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsTests.swift; sourceTree = "<group>"; };
+		616C29610C7D319E9083566B /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		6731D0BF020580CD2762CB88 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		6FED70006AADAE254196E2D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FF8473FCE180D96FE2508F9 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		7823AD2145EDDBF887AE8D63 /* MicKeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicKeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ADC463742303C1A498722E2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8CF84C8F38308107540989DE /* MicKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9233F11376170B3F085D0799 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		A1ADB331E1B9B307E02FE37E /* KeyOutputEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyOutputEngine.swift; sourceTree = "<group>"; };
+		C282641CC04FB571E5C3F94D /* MicKeyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicKeyApp.swift; sourceTree = "<group>"; };
+		C7D05C83F8ABABC4818661F5 /* MenuContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContentView.swift; sourceTree = "<group>"; };
+		D1EC46039EB50FD7C346C188 /* DeviceFingerprintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFingerprintTests.swift; sourceTree = "<group>"; };
+		D5F114B0599A42832D84DF24 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		DA1EC8EBC38D93DA63593587 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E12914A753D772D0DEAEAA9D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		E53C6A6D2C8C23DDC9771996 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EEDC16CA485CCE533F279775 /* DeviceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModels.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		002C4463A933B907D9B642D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD05A9A2567DAF77014D1884 /* IOKit.framework in Frameworks */,
+				E1505904F07C97826067A42C /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C220123A3197B15A54EE64C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CF84C8F38308107540989DE /* MicKey.app */,
+				7823AD2145EDDBF887AE8D63 /* MicKeyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C9370904B856A9C9DBEB0E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5F114B0599A42832D84DF24 /* AppSettings.swift */,
+				EEDC16CA485CCE533F279775 /* DeviceModels.swift */,
+				159C7C697AC5AA39ACDC2A49 /* MappingModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5FE70A8FB645B85AD1988E18 /* MicKeyTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BE127020B263AA1BB3D4348 /* AppSettingsTests.swift */,
+				D1EC46039EB50FD7C346C188 /* DeviceFingerprintTests.swift */,
+				481DC3B9A169C1CC4DF02D79 /* KeyOutputEngineTests.swift */,
+			);
+			path = MicKeyTests;
+			sourceTree = "<group>";
+		};
+		957FC8F8E0E5F7BEC0A93CF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0250583D7D77C032D07AFD43 /* ApplicationServices.framework */,
+				6731D0BF020580CD2762CB88 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B2085FB07E3D1EB17238C0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6FED70006AADAE254196E2D4 /* Assets.xcassets */,
+				3648B695369531FAF6FF8E05 /* MicKey.entitlements */,
+				D73E16C66CDFD3AE2CA9A659 /* InfoPlist.strings */,
+				3C7400C1E672CA722C92E847 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C6BA8767B05D44A99A57D6A7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				53266D9224747B021AD4F2F1 /* HIDService.swift */,
+				A1ADB331E1B9B307E02FE37E /* KeyOutputEngine.swift */,
+				9233F11376170B3F085D0799 /* PermissionManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE72F50F7A2CC505FEF825E1 = {
+			isa = PBXGroup;
+			children = (
+				D375EF716FACCE8BD67C1180 /* MicKey */,
+				5FE70A8FB645B85AD1988E18 /* MicKeyTests */,
+				957FC8F8E0E5F7BEC0A93CF4 /* Frameworks */,
+				2C220123A3197B15A54EE64C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D375EF716FACCE8BD67C1180 /* MicKey */ = {
+			isa = PBXGroup;
+			children = (
+				616C29610C7D319E9083566B /* AppController.swift */,
+				C282641CC04FB571E5C3F94D /* MicKeyApp.swift */,
+				2C9370904B856A9C9DBEB0E0 /* Models */,
+				9B2085FB07E3D1EB17238C0B /* Resources */,
+				C6BA8767B05D44A99A57D6A7 /* Services */,
+				F302D74AB78EB013B72D26E9 /* Views */,
+			);
+			path = MicKey;
+			sourceTree = "<group>";
+		};
+		F302D74AB78EB013B72D26E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7D05C83F8ABABC4818661F5 /* MenuContentView.swift */,
+				6FF8473FCE180D96FE2508F9 /* OnboardingView.swift */,
+				7ADC463742303C1A498722E2 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4AD978DB49B593A9C43765B /* MicKeyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60BC7B25D4CC84B2E46AC862 /* Build configuration list for PBXNativeTarget "MicKeyTests" */;
+			buildPhases = (
+				3C949FF038282E8632CF9BD7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				129FE02AAF1963C9460194F6 /* PBXTargetDependency */,
+			);
+			name = MicKeyTests;
+			packageProductDependencies = (
+			);
+			productName = MicKeyTests;
+			productReference = 7823AD2145EDDBF887AE8D63 /* MicKeyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A571D119FBB5700F8D672939 /* MicKey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B23FEE715C2B398511E85598 /* Build configuration list for PBXNativeTarget "MicKey" */;
+			buildPhases = (
+				526C25DA6CD6B6AA435D578C /* Sources */,
+				4AB16BEA12EDE85810B6DD12 /* Resources */,
+				002C4463A933B907D9B642D2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicKey;
+			packageProductDependencies = (
+			);
+			productName = MicKey;
+			productReference = 8CF84C8F38308107540989DE /* MicKey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DE39A82DEF85923238979BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					A4AD978DB49B593A9C43765B = {
+						ProvisioningStyle = Automatic;
+					};
+					A571D119FBB5700F8D672939 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 10F5A7DD275B6C3AF4C9D6C8 /* Build configuration list for PBXProject "MicKey" */;
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				"zh-Hans",
+			);
+			mainGroup = CE72F50F7A2CC505FEF825E1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2C220123A3197B15A54EE64C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A571D119FBB5700F8D672939 /* MicKey */,
+				A4AD978DB49B593A9C43765B /* MicKeyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AB16BEA12EDE85810B6DD12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE64CFB03EA7078E34B2E97 /* Assets.xcassets in Resources */,
+				44B66EEA05A36AB53C1B2180 /* InfoPlist.strings in Resources */,
+				479BBE6B048412E2CB56AF33 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C949FF038282E8632CF9BD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10707004308DAC928066B1F /* AppSettingsTests.swift in Sources */,
+				3534D39DB9851E7B3F73C8B1 /* DeviceFingerprintTests.swift in Sources */,
+				1671836FA471667879C2B9C9 /* KeyOutputEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526C25DA6CD6B6AA435D578C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CADE8FD3F842A38A2D7576 /* AppController.swift in Sources */,
+				8614AFB4B4CF2873C3B015F0 /* AppSettings.swift in Sources */,
+				EC16BB0DBC028C0D93689FE3 /* DeviceModels.swift in Sources */,
+				466EBACAFB2225A25C8CF57E /* HIDService.swift in Sources */,
+				51EFB3F09B28103A267BDBF5 /* KeyOutputEngine.swift in Sources */,
+				3E0D4A218862E63BB23EE116 /* MappingModels.swift in Sources */,
+				A1D84B8D4697812D24B498A9 /* MenuContentView.swift in Sources */,
+				C02C91F22603570F7467BB60 /* MicKeyApp.swift in Sources */,
+				CE65CC1277F07441F671F961 /* OnboardingView.swift in Sources */,
+				508CA7E0B263C73B37BA6D8C /* PermissionManager.swift in Sources */,
+				09441AA24CCCF9B9728F5201 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		129FE02AAF1963C9460194F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A571D119FBB5700F8D672939 /* MicKey */;
+			targetProxy = E2950E1DED6D71B9D5ACFACF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C7400C1E672CA722C92E847 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA1EC8EBC38D93DA63593587 /* en */,
+				38B84434228FF4210C1740EC /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D73E16C66CDFD3AE2CA9A659 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E53C6A6D2C8C23DDC9771996 /* en */,
+				E12914A753D772D0DEAEAA9D /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AA08C024CD812D04A24D7A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "arm64 x86_64";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		1FF2ACAE9F30F5D205D3244C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MicKey/Resources/MicKey.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MicKey/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MicKey;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mickey.app;
+				PRODUCT_NAME = MicKey;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+			};
+			name = Release;
+		};
+		59259F1377255B9B1018B7D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "arm64 x86_64";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		7F5D6AFB5221F7808E1AFF2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MicKey/Resources/MicKey.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MicKey/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MicKey;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mickey.app;
+				PRODUCT_NAME = MicKey;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+			};
+			name = Debug;
+		};
+		F33FF84C2E5E4038FCDB76B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mickey.tests;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicKey.app/Contents/MacOS/MicKey";
+			};
+			name = Release;
+		};
+		FE5DF8001FC4943185F66174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mickey.tests;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicKey.app/Contents/MacOS/MicKey";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10F5A7DD275B6C3AF4C9D6C8 /* Build configuration list for PBXProject "MicKey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59259F1377255B9B1018B7D6 /* Debug */,
+				0AA08C024CD812D04A24D7A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		60BC7B25D4CC84B2E46AC862 /* Build configuration list for PBXNativeTarget "MicKeyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE5DF8001FC4943185F66174 /* Debug */,
+				F33FF84C2E5E4038FCDB76B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B23FEE715C2B398511E85598 /* Build configuration list for PBXNativeTarget "MicKey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5D6AFB5221F7808E1AFF2A /* Debug */,
+				1FF2ACAE9F30F5D205D3244C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DE39A82DEF85923238979BA /* Project object */;
+}
