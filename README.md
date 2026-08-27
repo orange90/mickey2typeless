@@ -21,7 +21,16 @@ MicKey 是一个原生 macOS 26 菜单栏应用，把麦克风 USB 接收器的 
 
 ## 安装
 
-从 [GitHub Releases](https://github.com/orange90/mickey2typeless/releases) 下载最新的已签名、公证 DMG，将 MicKey 拖入“应用程序”文件夹后启动。首次使用需按引导授予“输入监控”和“辅助功能”权限。
+当前 [GitHub Releases](https://github.com/orange90/mickey2typeless/releases) 提供的是未经过 Apple 公证的 DMG。请只从本项目的官方 Releases 页面下载 `MicKey-1.0.0-unnotarized.dmg`，并使用随附的 `.sha256` 文件核对下载内容。
+
+将 MicKey 拖入“应用程序”文件夹后，macOS 会在首次打开时阻止运行，因为系统无法验证开发者。请按以下步骤手动允许：
+
+1. 在“应用程序”文件夹中打开一次 MicKey，看到安全提示后关闭提示。
+2. 打开“系统设置 → 隐私与安全性”。
+3. 滚动到“安全性”区域，找到关于 MicKey 被阻止的提示，点击“仍要打开”。
+4. 使用密码或 Touch ID 确认，然后在下一次提示中选择“打开”。
+
+只有在下载来源和 SHA-256 校验均可信时才应绕过 Gatekeeper。这个操作只允许应用启动；首次使用仍需按引导另外授予“输入监控”和“辅助功能”权限。
 
 ## 使用方法
 
@@ -133,6 +142,14 @@ NOTARY_PROFILE=YOUR_NOTARY_PROFILE \
 ```
 
 脚本会 archive、导出签名应用、创建 DMG、提交 Apple 公证并 staple，同时生成 SHA-256 校验文件。产物名称自动使用 `MARKETING_VERSION`，例如 `release/MicKey-1.0.0.dmg`。Hardened Runtime 已启用，App Sandbox 已禁用。完整流程见 [RELEASE.md](RELEASE.md)。
+
+如果没有 Developer ID Application 证书，可以创建明确标注为未公证的发布包：
+
+```sh
+./scripts/package_unnotarized_release.sh
+```
+
+产物为 `release/MicKey-1.0.0-unnotarized.dmg` 及其 SHA-256 文件。此包使用 ad-hoc 签名，不具备 Apple 开发者身份或公证票据，用户首次打开时必须按上面的步骤在“隐私与安全性”中手动允许。
 
 ## 真机验收
 

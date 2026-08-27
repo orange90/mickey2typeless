@@ -21,7 +21,16 @@ Map a physical button on the microphone to the Mac's Fn (Globe) key to trigger T
 
 ## Installation
 
-Download the latest signed and notarized DMG from [GitHub Releases](https://github.com/orange90/mickey2typeless/releases), move MicKey to Applications, and launch it. The first-run guide will request Input Monitoring and Accessibility permissions.
+The DMG currently available from [GitHub Releases](https://github.com/orange90/mickey2typeless/releases) is not notarized by Apple. Download `MicKey-1.0.0-unnotarized.dmg` only from this project's official Releases page and verify it against the accompanying `.sha256` file.
+
+After moving MicKey to Applications, macOS blocks the first launch because it cannot verify the developer. To allow the app manually:
+
+1. Open MicKey once from Applications, then dismiss the security warning.
+2. Open System Settings → Privacy & Security.
+3. Scroll down to Security, find the message that MicKey was blocked, and click Open Anyway.
+4. Authenticate with your password or Touch ID, then click Open in the next prompt.
+
+Bypass Gatekeeper only when both the download source and SHA-256 checksum are trusted. This approval only allows the app to launch; the first-run guide will still request Input Monitoring and Accessibility permissions separately.
 
 ## How to use MicKey
 
@@ -113,6 +122,14 @@ NOTARY_PROFILE=YOUR_NOTARY_PROFILE \
 ```
 
 The script archives, signs, packages, notarizes, and staples the app, then produces a versioned DMG and SHA-256 checksum in `release/`. See [RELEASE.md](RELEASE.md) for the full checklist.
+
+If a Developer ID Application certificate is unavailable, create an explicitly labeled unnotarized package instead:
+
+```sh
+./scripts/package_unnotarized_release.sh
+```
+
+This produces `release/MicKey-1.0.0-unnotarized.dmg` and its SHA-256 file. The app uses an ad-hoc signature and has no verified Apple developer identity or notarization ticket, so users must allow its first launch manually under Privacy & Security as described above.
 
 ## Contributing and license
 
